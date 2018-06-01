@@ -1,2 +1,2 @@
 # RubyOnRailsPractice
-キラッとRuby On Rails
+キラッとRuby On Railsやってみた
