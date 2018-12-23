@@ -8,4 +8,8 @@ class ApplicationController < ActionController::Base
     def goodbye
         render html: "Good night, 今日はもう眠ろう"
     end
+
+    def nyaan
+        render html: "にゃーん！ ねこさんのマネでしたー ByeBye"
+    end
 end
