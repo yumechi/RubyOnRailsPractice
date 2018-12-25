@@ -19,7 +19,7 @@ if option[:d]
   site_name = map_data[dir_name]
   if force_flag or site_name
     puts "try build #{dir_name}"
-    result = `git subtree push --prefix #{dir_name}/ heroku master`
+    result = `git push heroku \`git subtree split --prefix #{dir_name} master\`:master --force`
     if $? == 0
       puts site_name ? "show page: https://#{site_name}.herokuapp.com/" : "build success"
     else
